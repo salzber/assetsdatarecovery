@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#0A0C10',
+                        cardBg: '#13161C',
+                        elevatedBg: '#1A1F2A',
+                        borderColor: '#252B36',
+                        primary: '#10B981',       // Emerald Green
+                        primaryHover: '#059669',  
+                        textSecondary: '#94A3B8',
+                        textMuted: '#64748B',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body { background-color: #0A0C10; color: #E8EDF2; font-family: 'Inter', sans-serif; }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0A0C10; }
+        ::-webkit-scrollbar-thumb { background: #252B36; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: #10B981; }
+    </style>
+</head>
+<body class="antialiased overflow-x-hidden">
+
+    <a href="https://t.me/Alex_watson11" target="_blank" title="Contact Telegram @Alex_watson11" class="fixed bottom-[150px] md:bottom-[156px] right-6 md:right-5 z-[998] w-[54px] h-[54px] md:w-[56px] md:h-[56px] bg-[#29a9e1] rounded-full flex items-center justify-center shadow-lg hover:scale-105 transition-transform border-2 border-white/20">
+        <svg viewBox="0 0 24 24" class="w-8 h-8 fill-white">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.6-1.38-.97-2.23-1.56-.99-.68-.35-1.06.22-1.68.15-.15 2.77-2.54 2.82-2.76.01-.03.02-.14-.05-.2-.07-.06-.18-.04-.26-.02-.1.02-1.73 1.1-4.88 3.23-.46.32-.88.47-1.25.46-.41-.01-1.2-.23-1.79-.42-.73-.23-1.31-.35-1.26-.74.03-.2.31-.41.85-.63 3.13-1.36 5.22-2.26 6.27-2.7 2.99-1.25 3.61-1.47 4.01-1.47.09 0 .29.02.42.13.1.08.13.19.14.28.01.1.01.18-.02.28z"></path>
+        </svg>
+    </a>
+
+    <a href="https://wa.me/12098890576?text=Hi%2C%20I%20need%20help%20with%20scam%20recovery" target="_blank" class="fixed bottom-[91px] md:bottom-[90px] right-6 md:right-5 z-[998] w-[54px] h-[54px] md:w-[60px] md:h-[60px] bg-[#25D366] rounded-full flex items-center justify-center shadow-lg hover:scale-105 transition-transform cursor-pointer">
+        <svg viewBox="0 0 24 24" class="w-8 h-8 md:w-[34px] md:h-[34px] fill-white">
+            <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-5.45-4.45-9.9-9.91-9.9zm0 18.23c-1.5 0-2.98-.4-4.26-1.16l-.3-.18-3.12.82.83-3.04-.2-.31c-.84-1.32-1.28-2.85-1.28-4.41 0-4.6 3.75-8.36 8.36-8.36 4.6 0 8.36 3.75 8.36 8.36-.01 4.6-3.76 8.36-8.36 8.36zm4.58-6.26c-.25-.13-1.48-.73-1.71-.81-.23-.09-.4-.13-.56.13-.17.26-.65.81-.8.97-.14.17-.29.19-.54.06s-1.05-.39-2-1.23c-.74-.66-1.24-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.38-.44.13-.15.17-.26.25-.43.09-.17.04-.32-.02-.45-.06-.13-.56-1.35-.77-1.85-.2-.49-.41-.42-.56-.43-.14-.01-.31-.01-.47-.01s-.43.06-.65.31c-.22.26-.85.83-.85 2.02 0 1.19.87 2.34.99 2.5.12.17 1.71 2.62 4.15 3.67.58.25 1.03.4 1.38.51.58.18 1.11.16 1.53.1.47-.07 1.48-.61 1.69-1.19.21-.59.21-1.09.15-1.2-.06-.09-.22-.15-.47-.28z"></path>
+        </svg>
+    </a>
+
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX" height="0" width="0" class="hidden"></iframe></noscript>
+
+    <nav class="sticky top-0 bg-darkBg/95 backdrop-blur-md border-b border-borderColor py-4 z-[100]">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-white hover:text-primary transition-colors logo">
+                Asset Data Recovery
+            </a>
+            <div class="hidden md:flex gap-8 items-center">
+                <a href="how-to-recover.html" class="text-primary font-medium transition-colors">How to Recover</a>
+                <a href="how-scams-happen.html" class="text-textSecondary hover:text-primary font-medium transition-colors">How Scams Happen</a>
+                <a href="real-cases.html" class="text-textSecondary hover:text-primary font-medium transition-colors">Real Cases</a>
+                <a href="common-scams.html" class="text-textSecondary hover:text-primary font-medium transition-colors">Common Scams</a>
+                <a href="faq.html" class="text-textSecondary hover:text-primary font-medium transition-colors">FAQ</a>
+                <button class="bg-primary hover:bg-primaryHover text-white px-5 py-2.5 rounded-full font-semibold text-sm transition-all transform hover:-translate-y-0.5 jivo-trigger">Chat Now</button>
+            </div>
+            <div class="md:hidden text-3xl cursor-pointer text-white" onclick="toggleMenu()">☰</div>
+        </div>
+    </nav>
+
+    <div id="menuOverlay" class="fixed inset-0 bg-black/70 z-[999] hidden" onclick="toggleMenu()"></div>
+    <div id="mobileMenu" class="fixed top-0 left-0 w-[280px] h-full bg-cardBg border-r border-borderColor z-[1000] p-6 pt-20 flex flex-col gap-6 transform -translate-x-full transition-transform duration-300 ease-in-out">
+        <div class="absolute top-5 right-5 text-3xl cursor-pointer text-white" onclick="toggleMenu()">✕</div>
+        <a href="index.html" class="text-textSecondary hover:text-primary text-lg font-medium">Home</a>
+        <a href="how-to-recover.html" class="text-primary text-lg font-medium">How to Recover</a>
+        <a href="how-scams-happen.html" class="text-textSecondary hover:text-primary text-lg font-medium">How Scams Happen</a>
+        <a href="real-cases.html" class="text-textSecondary hover:text-primary text-lg font-medium">Real Cases</a>
+        <a href="common-scams.html" class="text-textSecondary hover:text-primary text-lg font-medium">Common Scams</a>
+        <a href="faq.html" class="text-textSecondary hover:text-primary text-lg font-medium">FAQ</a>
+        <button class="bg-primary hover:bg-primaryHover text-white px-5 py-3 rounded-full font-semibold mt-4 jivo-trigger">Chat Now</button>
+    </div>
+
+    <main class="max-w-5xl mx-auto px-6 py-12">
+        <div class="text-center pb-12">
+            <h1 class="text-4xl md:text-5xl font-bold bg-gradient-to-br from-white to-primary bg-clip-text text-transparent mb-4">How to Recover Lost Funds</h1>
+            <p class="text-lg text-textSecondary max-w-2xl mx-auto">The first 24 hours are critical. Follow this proven process.</p>
+        </div>
+
+        <div class="bg-gradient-to-br from-primary/10 to-primary/5 border-l-4 border-primary rounded-2xl p-6 md:p-8 mb-10">
+            <h3 class="text-primary text-xl font-bold mb-3">⏰ The First 24 Hours Are Critical</h3>
+            <p class="text-textSecondary mb-2">Every hour you wait, the harder it becomes to freeze the scammer's account. <span class="text-primary font-bold">Don't wait — act now.</span></p>
+            <p class="text-textSecondary">Most successful recoveries happen when victims report within <strong class="text-white">24 hours</strong> of the transaction.</p>
+        </div>
+
+        <div class="h-[250px] md:h-[400px] rounded-2xl overflow-hidden bg-cardBg my-10">
+            <img src="https://images.pexels.com/photos/7947841/pexels-photo-7947841.jpeg" alt="Emergency recovery process flowchart" class="w-full h-full object-cover">
+        </div>
+
+        <div class="flex flex-col md:flex-row gap-6 md:gap-8 bg-cardBg border border-borderColor rounded-3xl p-8 mb-8 hover:border-primary transition-colors">
+            <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center text-3xl font-bold text-white shrink-0 mx-auto md:mx-0">1</div>
+            <div class="text-center md:text-left">
+                <h3 class="text-2xl font-bold text-white mb-3">Call Police Immediately</h3>
+                <p class="text-textSecondary mb-5 leading-relaxed">Dial your local emergency number or go to the nearest police station. Request an "emergency payment freeze" — this is the most critical step. Provide the officer with the scammer's bank account information, your transaction records, and any communication evidence.</p>
+                <button class="bg-primary hover:bg-primaryHover text-white px-6 py-2.5 rounded-full font-semibold text-sm transition-transform transform hover:-translate-y-1 jivo-trigger">Need help explaining? Chat now</button>
+            </div>
+        </div>
+
+        <div class="h-[250px] md:h-[400px] rounded-2xl overflow-hidden bg-cardBg my-10">
+            <img src="https://images.pexels.com/photos/2116616/pexels-photo-2116616.jpeg" alt="Person calling police" class="w-full h-full object-cover">
+        </div>
+
+        <div class="flex flex-col md:flex-row gap-6 md:gap-8 bg-cardBg border border-borderColor rounded-3xl p-8 mb-8 hover:border-primary transition-colors">
+            <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center text-3xl font-bold text-white shrink-0 mx-auto md:mx-0">2</div>
+            <div class="text-center md:text-left">
+                <h3 class="text-2xl font-bold text-white mb-3">Gather and Preserve All Evidence</h3>
+                <p class="text-textSecondary leading-relaxed">Take screenshots or screen recordings of: chat logs (with phone numbers/IDs visible), transaction receipts, bank statements, the scammer's profile, and any links or apps they asked you to download. Export official bank/payment statements with stamps if possible.</p>
+            </div>
+        </div>
+
+        <div class="h-[250px] md:h-[400px] rounded-2xl overflow-hidden bg-cardBg my-10">
+            <img src="https://images.pexels.com/photos/5053740/pexels-photo-5053740.jpeg" alt="Hands holding phone showing chat messages" class="w-full h-full object-cover">
+        </div>
+
+        <div class="flex flex-col md:flex-row gap-6 md:gap-8 bg-cardBg border border-borderColor rounded-3xl p-8 mb-8 hover:border-primary transition-colors">
+            <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center text-3xl font-bold text-white shrink-0 mx-auto md:mx-0">3</div>
+            <div class="text-center md:text-left">
+                <h3 class="text-2xl font-bold text-white mb-3">Contact Your Bank or Payment Platform</h3>
+                <p class="text-textSecondary leading-relaxed">Call your bank's fraud department immediately. Ask to reverse the transaction or freeze the recipient's account. For PayPal, Venmo, or crypto transfers, contact their support with your case number.</p>
+            </div>
+        </div>
+
+        <div class="h-[250px] md:h-[400px] rounded-2xl overflow-hidden bg-cardBg my-10">
+            <img src="https://images.pexels.com/photos/7658238/pexels-photo-7658238.jpeg" alt="Bank customer service" class="w-full h-full object-cover">
+        </div>
+
+        <div class="flex flex-col md:flex-row gap-6 md:gap-8 bg-cardBg border border-borderColor rounded-3xl p-8 mb-8 hover:border-primary transition-colors">
+            <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center text-3xl font-bold text-white shrink-0 mx-auto md:mx-0">4</div>
+            <div class="text-center md:text-left">
+                <h3 class="text-2xl font-bold text-white mb-3">File Official Reports</h3>
+                <p class="text-textSecondary leading-relaxed">Get your police case number and keep the receipt. Report to your country's cyber crime unit (IC3 in the US, Action Fraud in the UK, eSafety in Australia). File with FTC if applicable.</p>
+            </div>
+        </div>
+
+        <div class="h-[250px] md:h-[400px] rounded-2xl overflow-hidden bg-cardBg my-10">
+            <img src="https://images.pexels.com/photos/35029019/pexels-photo-35029019.jpeg" alt="Filing official reports" class="w-full h-full object-cover">
+        </div>
+
+        <div class="bg-red-500/10 border-l-4 border-red-500 rounded-2xl p-6 md:p-8 my-10">
+            <h4 class="text-red-500 text-xl font-bold mb-3">⚠️ Critical Warning: Watch for Recovery Scams</h4>
+            <p class="text-textSecondary">No one — not a "hacker," "lawyer," or "agent" — can guarantee to recover your money for an upfront fee. <strong class="text-white">Only law enforcement can legally recover funds</strong>. If someone contacts you offering recovery services for a fee, they are trying to scam you again.</p>
+        </div>
+
+        <div class="h-[250px] md:h-[400px] rounded-2xl overflow-hidden bg-cardBg my-10">
+            <img src="https://images.pexels.com/photos/3747139/pexels-photo-3747139.jpeg" alt="Red warning sign scam alert" class="w-full h-full object-cover">
+        </div>
+
+        <div class="flex flex-col md:flex-row gap-6 md:gap-8 bg-cardBg border border-borderColor rounded-3xl p-8 mb-8 hover:border-primary transition-colors">
+            <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center text-3xl font-bold text-white shrink-0 mx-auto md:mx-0">5</div>
+            <div class="text-center md:text-left">
+                <h3 class="text-2xl font-bold text-white mb-3">Track Your Case &amp; Follow Up</h3>
+                <p class="text-textSecondary leading-relaxed">Call the police officer assigned to your case every 2-3 weeks. Provide any new evidence. Keep your case number safe.</p>
+            </div>
+        </div>
+
+        <div class="text-center py-8 border-y border-borderColor my-12">
+            <p class="text-textSecondary italic text-lg px-4">✨ "The difference between losing everything and recovering funds often comes down to one thing: acting fast."</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 my-12">
+            <div class="bg-cardBg border border-borderColor rounded-3xl p-6 md:p-8">
+                <h3 class="text-primary text-xl font-bold mb-6">✅ DO This</h3>
+                <ul class="space-y-4">
+                    <li class="flex items-center gap-3 pb-4 border-b border-borderColor"><span class="text-primary text-xl font-bold">✓</span> <span class="text-textSecondary">Call police immediately</span></li>
+                    <li class="flex items-center gap-3 pb-4 border-b border-borderColor"><span class="text-primary text-xl font-bold">✓</span> <span class="text-textSecondary">Save all screenshots &amp; receipts</span></li>
+                    <li class="flex items-center gap-3 pb-4 border-b border-borderColor"><span class="text-primary text-xl font-bold">✓</span> <span class="text-textSecondary">Contact your bank fraud department</span></li>
+                    <li class="flex items-center gap-3"><span class="text-primary text-xl font-bold">✓</span> <span class="text-textSecondary">Talk to us for free guidance</span></li>
+                </ul>
+            </div>
+            <div class="bg-cardBg border border-borderColor rounded-3xl p-6 md:p-8">
+                <h3 class="text-textSecondary text-xl font-bold mb-6">❌ DON'T Do This</h3>
+                <ul class="space-y-4">
+                    <li class="flex items-center gap-3 pb-4 border-b border-borderColor"><span class="text-textMuted text-xl font-bold">✗</span> <span class="text-textSecondary">Pay any "recovery fee" to strangers</span></li>
+                    <li class="flex items-center gap-3 pb-4 border-b border-borderColor"><span class="text-textMuted text-xl font-bold">✗</span> <span class="text-textSecondary">Trust hackers who promise to get money back</span></li>
+                    <li class="flex items-center gap-3 pb-4 border-b border-borderColor"><span class="text-textMuted text-xl font-bold">✗</span> <span class="text-textSecondary">Keep it a secret from family</span></li>
+                    <li class="flex items-center gap-3"><span class="text-textMuted text-xl font-bold">✗</span> <span class="text-textSecondary">Send more money to "unlock" funds</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <h2 class="text-3xl font-bold text-center text-white my-12">💬 Real People, Real Recovery</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+            <div class="bg-cardBg border border-borderColor rounded-3xl p-8 hover:-translate-y-1 hover:border-primary transition-all">
+                <div class="text-4xl text-primary opacity-50 mb-4">“</div>
+                <p class="text-textSecondary italic leading-relaxed mb-6">I reported within 12 hours. The bank froze the transaction and I got back $47,000. Your guide saved me.</p>
+                <div class="text-white font-bold text-sm">— Michael, Texas</div>
+                <div class="text-textMuted text-xs mt-1">Recovered: $47K</div>
+            </div>
+            <div class="bg-cardBg border border-borderColor rounded-3xl p-8 hover:-translate-y-1 hover:border-primary transition-all">
+                <div class="text-4xl text-primary opacity-50 mb-4">“</div>
+                <p class="text-textSecondary italic leading-relaxed mb-6">I was about to pay a "recovery hacker" $5,000. Your chat told me it was a scam. You saved me from being scammed twice.</p>
+                <div class="text-white font-bold text-sm">— Sarah, Florida</div>
+                <div class="text-textMuted text-xs mt-1">Saved: $5K</div>
+            </div>
+            <div class="bg-cardBg border border-borderColor rounded-3xl p-8 hover:-translate-y-1 hover:border-primary transition-all">
+                <div class="text-4xl text-primary opacity-50 mb-4">“</div>
+                <p class="text-textSecondary italic leading-relaxed mb-6">The police report template and evidence checklist helped me file correctly. My case is now under investigation.</p>
+                <div class="text-white font-bold text-sm">— David, California</div>
+                <div class="text-textMuted text-xs mt-1">Case opened</div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 my-10">
+            <div class="h-[250px] md:h-[300px] rounded-2xl overflow-hidden bg-cardBg">
+                <img src="https://images.pexels.com/photos/9068376/pexels-photo-9068376.jpeg" alt="Person making phone call" class="w-full h-full object-cover">
+            </div>
+            <div class="h-[250px] md:h-[300px] rounded-2xl overflow-hidden bg-cardBg">
+                <img src="https://images.pexels.com/photos/6382516/pexels-photo-6382516.jpeg" alt="Person receiving emotional support" class="w-full h-full object-cover">
+            </div>
+        </div>
+
+        <div class="text-center py-8 border-y border-borderColor my-12">
+            <p class="text-textSecondary italic text-lg px-4">💪 "You've already taken the first step by educating yourself. Now take the next one."</p>
+        </div>
+
+        <div class="bg-gradient-to-br from-cardBg to-[#0D1117] border border-borderColor rounded-[2rem] p-10 md:p-16 text-center my-16">
+            <h3 class="text-3xl md:text-4xl font-bold bg-gradient-to-br from-white to-primary bg-clip-text text-transparent mb-6">Ready to Take Action?</h3>
+            <p class="text-textSecondary mb-8 max-w-xl mx-auto">You don't have to figure this out alone. Talk to us — it's free, confidential, and there's no obligation.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <button class="bg-primary hover:bg-primaryHover text-white px-8 py-3.5 rounded-full font-bold text-base transition-transform transform hover:-translate-y-1 jivo-trigger">Chat With Us Now →</button>
+                <button class="border border-borderColor hover:border-primary text-white hover:text-primary px-8 py-3.5 rounded-full font-bold text-base transition-colors jivo-trigger">Ask a Question</button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="border-t border-borderColor py-12 text-center text-textMuted text-sm">
+        <div class="max-w-7xl mx-auto px-6">
+            <p>© 2026 Asset Data Recovery. All rights reserved.</p>
+            <p class="mt-2">Your trusted guide to scam fund recovery</p>
+            <div class="mt-6 flex justify-center gap-6">
+                <a href="terms.html" class="hover:text-white transition-colors">Terms & Policies</a>
+                <a href="#" class="jivo-trigger hover:text-white transition-colors">Contact via Chat</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        function toggleMenu() {
+            document.getElementById('mobileMenu').classList.toggle('-translate-x-full');
+            document.getElementById('menuOverlay').classList.toggle('hidden');
+        }
+
+        // ✅ JivoChat Trigger
+        document.querySelectorAll('.jivo-trigger').forEach(btn => {
+            btn.addEventListener('click', function (e) {
+                e.preventDefault();
+                if (window.jivo_api) {
+                    jivo_api.open();
+                } else {
+                    alert('Chat is loading. Please try again in a moment.');
+                }
+            });
+        });
+
+        // Logo click override
+        document.querySelectorAll('.logo').forEach(logo => {
+            logo.addEventListener('click', function (e) {
+                if (window.location.pathname.includes('index.html') || window.location.pathname === '/' || window.location.pathname.endsWith('/')) {
+                    e.preventDefault();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
